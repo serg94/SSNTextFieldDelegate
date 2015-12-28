@@ -13,17 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet var textFields: [UITextField]!
     
     let ssnFieldDelegate = SSNTextFieldDelegate()
+    var delegates = [SSNTextFieldDelegate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFields.forEach { (field) -> () in
-            field.delegate = self.ssnFieldDelegate
+            let delegate = SSNTextFieldDelegate()
+            self.delegates.append(delegate)
+            field.delegate = delegate
         }
     }
     
     @IBAction func validateFields(sender: AnyObject) {
         let validation = textFields.map({ ($0.delegate as? SSNTextFieldDelegate)?.getSSN()?.isValid() ?? false })
+        print(validation)
+        
         let msg = validation.map { $0.description }.joinWithSeparator(",")
         let alertVC = UIAlertController(title: nil, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
