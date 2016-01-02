@@ -12,10 +12,10 @@
 		D51B80041C31DF44007601D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51B80021C31DF44007601D2 /* Main.storyboard */; };
 		D51B80061C31DF44007601D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51B80051C31DF44007601D2 /* Assets.xcassets */; };
 		D51B80091C31DF44007601D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51B80071C31DF44007601D2 /* LaunchScreen.storyboard */; };
-		D51B80141C31E041007601D2 /* SSNTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B80131C31E041007601D2 /* SSNTextFieldDelegate.swift */; };
-		D51B80161C31E0E1007601D2 /* SSN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B80151C31E0E1007601D2 /* SSN.swift */; };
 		D51B80191C31F22A007601D2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D51B80171C31F22A007601D2 /* LICENSE */; };
 		D51B801A1C31F22A007601D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D51B80181C31F22A007601D2 /* README.md */; };
+		D53C5C6A1C385F0800D482E7 /* SSN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C5C681C385F0800D482E7 /* SSN.swift */; };
+		D53C5C6B1C385F0800D482E7 /* SSNTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C5C691C385F0800D482E7 /* SSNTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		D51B80051C31DF44007601D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D51B80081C31DF44007601D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D51B800A1C31DF44007601D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D51B80131C31E041007601D2 /* SSNTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSNTextFieldDelegate.swift; sourceTree = "<group>"; };
-		D51B80151C31E0E1007601D2 /* SSN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSN.swift; sourceTree = "<group>"; };
 		D51B80171C31F22A007601D2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D51B80181C31F22A007601D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D53C5C681C385F0800D482E7 /* SSN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSN.swift; sourceTree = "<group>"; };
+		D53C5C691C385F0800D482E7 /* SSNTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSNTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			children = (
 				D51B80171C31F22A007601D2 /* LICENSE */,
 				D51B80181C31F22A007601D2 /* README.md */,
-				D51B80111C31DFA2007601D2 /* ssn */,
+				D53C5C671C385F0800D482E7 /* ssn */,
 				D51B7FFD1C31DF44007601D2 /* ssnField */,
 				D51B7FFC1C31DF44007601D2 /* Products */,
 			);
@@ -82,16 +82,6 @@
 			name = Nibs;
 			sourceTree = "<group>";
 		};
-		D51B80111C31DFA2007601D2 /* ssn */ = {
-			isa = PBXGroup;
-			children = (
-				D51B80131C31E041007601D2 /* SSNTextFieldDelegate.swift */,
-				D51B80151C31E0E1007601D2 /* SSN.swift */,
-			);
-			name = ssn;
-			path = ssnField;
-			sourceTree = "<group>";
-		};
 		D51B80121C31DFBB007601D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +89,16 @@
 				D51B800A1C31DF44007601D2 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D53C5C671C385F0800D482E7 /* ssn */ = {
+			isa = PBXGroup;
+			children = (
+				D53C5C681C385F0800D482E7 /* SSN.swift */,
+				D53C5C691C385F0800D482E7 /* SSNTextFieldDelegate.swift */,
+			);
+			name = ssn;
+			path = ssnField/ssn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51B80161C31E0E1007601D2 /* SSN.swift in Sources */,
+				D53C5C6A1C385F0800D482E7 /* SSN.swift in Sources */,
 				D51B80011C31DF44007601D2 /* ViewController.swift in Sources */,
+				D53C5C6B1C385F0800D482E7 /* SSNTextFieldDelegate.swift in Sources */,
 				D51B801A1C31F22A007601D2 /* README.md in Sources */,
-				D51B80141C31E041007601D2 /* SSNTextFieldDelegate.swift in Sources */,
 				D51B7FFF1C31DF44007601D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +325,7 @@
 				D51B800F1C31DF44007601D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
