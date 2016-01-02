@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.platform      = :ios
   s.ios.deployment_target = "8.0"
   s.source        = { :git => "https://github.com/serg94/SSNTextFieldDelegate.git", :tag => s.version }
-  s.source_files  = 'Classes', './ssnField/ssn/*.{swift}'
+  s.source_files  = 'Classes', 'ssnField/**/SSN.swift', 'ssnField/**/SSNTextFieldDelegate.swift'
 end
