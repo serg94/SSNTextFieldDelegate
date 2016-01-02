@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name          = "ssnField"
+  s.name          = "SSNTextFieldDelegate"
   s.version       = "0.0.1"
   s.summary       = "SSNTextFieldDelegate lets you format input as SSN, and give you SSN validation."
   s.requires_arc  = true
@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.platform      = :ios
   s.ios.deployment_target = "8.0"
   s.source        = { :git => "https://github.com/serg94/SSNTextFieldDelegate.git", :tag => s.version }
-  s.source_files  = 'Classes', 'ssnField/**/SSN.swift', 'ssnField/**/SSNTextFieldDelegate.swift'
+  s.source_files  = 'ssnField/**/SSN.swift', 'ssnField/**/SSNTextFieldDelegate.swift'
 end
