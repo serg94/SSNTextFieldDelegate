@@ -17,15 +17,15 @@ private extension NSRange {
     }
 }
 
-class SSNTextFieldDelegate: NSObject, UITextFieldDelegate {
+public class SSNTextFieldDelegate: NSObject, UITextFieldDelegate {
     private var ssn: String?
     
-    func setSSN(textField: UITextField, ssn: String) {
+    public func setSSN(textField: UITextField, ssn: String) {
         let length = textField.text?.characters.count ?? 1
         self.textField(textField, shouldChangeCharactersInRange: NSMakeRange(0, length), replacementString: ssn)
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let str = (textField.text ?? "") as NSString
         var result = str.stringByReplacingCharactersInRange(range, withString: string)
         
@@ -60,7 +60,7 @@ class SSNTextFieldDelegate: NSObject, UITextFieldDelegate {
         return false
     }
     
-    func getSSN() -> SSN? {
+    public func getSSN() -> SSN? {
         guard self.ssn?.characters.count == 11 else {
             return nil;
         }

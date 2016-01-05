@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SSN {
+public class SSN {
     var areaNumber: String = ""
     var groupCode: String = ""
     var serialNumber: String = ""
@@ -45,7 +45,7 @@ class SSN {
     }
     
     // MARK: public methids
-    func isValid() -> Bool {
+    public func isValid() -> Bool {
         return isAreaNumberValid() && isGroupCodeValid() && isSerialNumberValid()
     }
 }
