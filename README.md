@@ -43,8 +43,7 @@ class ViewController: UIViewController {
 }
 ```
 
-Set the [SSNTextFieldDelegate]() to your textfield and drink a beer.
-
+Set the [SSNTextFieldDelegate]() to your textfield and drink a beer.\n
 Make sure to have a strong pointer to delegate to prevent deallocation
 
 ##Define the Rules
