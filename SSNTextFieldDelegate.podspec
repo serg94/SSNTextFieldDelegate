@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "SSNTextFieldDelegate"
-  s.version       = "0.0.1"
+  s.version       = "0.0.2"
   s.summary       = "SSNTextFieldDelegate lets you format input as SSN, and give you SSN validation."
   s.requires_arc  = true
   s.homepage      = "https://github.com/serg94/SSNTextFieldDelegate"
