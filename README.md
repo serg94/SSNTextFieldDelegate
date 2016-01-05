@@ -28,6 +28,21 @@ $ pod install
 
 ## How to use
 
+```swift
+class ViewController: UIViewController {
+
+	@IBOutlet weak var field: UITextField!
+	let ssnDelegate = SSNTextFieldDelegate()
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		field.delegate = ssnDelegate
+	}
+
+	// let isValidSSN = true == ssnDelegate.getSSN()?.isValid()
+}
+```
+
 Set the [SSNTextFieldDelegate]() to your textfield and drink a beer.
 
 ##Define the Rules
